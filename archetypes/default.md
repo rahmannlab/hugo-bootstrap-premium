@@ -1,11 +1,8 @@
 ---
-type: "post"
-draft: true
+title: "{{ replace .Name "-" " " | title }}"
 author: "author"
-description: "description"
-keywords: ["key", "words"]
-topics: ["topic 1"]
-tags: ["one", "two"]
+date: {{ .Date }}
+draft: true
 ---
 
 # Headline
