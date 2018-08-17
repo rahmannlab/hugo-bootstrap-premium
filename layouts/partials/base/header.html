@@ -8,15 +8,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        {{ if and ( ne .Site.Title "" ) ( eq .Site.Params.BrandImage "" )}}
-        <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL}}">
+        {{- if and ( ne .Site.Title "" ) ( eq .Site.Params.BrandImage "" ) -}}
+        <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
           {{ .Site.Title }}
-          {{ end }}
-          {{ if ( ne .Site.Params.BrandImage "" ) }}
-          <a class="navbar-brand-img" href="{{ .Site.BaseURL | relLangURL}}">
-            <img alt="{{ .Site.Params.brand }}" src="{{ .Site.Params.BrandImage }}">
-            {{ end }}
-          </a>
+        {{- end }}
+        {{ if ( ne .Site.Params.BrandImage "" ) -}}
+        <a class="navbar-brand-img" href="{{ .Site.BaseURL | relLangURL}}">
+          <img alt="{{ .Site.Params.brand }}" src="{{ .Site.Params.BrandImage }}">
+        </a>
+        {{- end }}
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
