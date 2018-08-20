@@ -4,7 +4,7 @@
   </p>
 </div>
 <div class="pull-right">
-{{ range .Site.Menus.footer }}
+{{ range .Site.Menus.footer -}}
 <a href="{{ .URL | absLangURL }}">{{ .Name }}</a> {{ .Pre }}
-{{ end }}
+{{- end }}
 </div>
