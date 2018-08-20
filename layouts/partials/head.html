@@ -10,4 +10,4 @@
   {{ partial "base/imports.html" . }}
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }} data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
-    {{ partial "base/header.html" . }}
+{{ partial "base/header.html" . }}
